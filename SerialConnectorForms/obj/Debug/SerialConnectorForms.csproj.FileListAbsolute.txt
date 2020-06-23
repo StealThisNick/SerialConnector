@@ -8,3 +8,13 @@ C:\Users\klaud\source\repos\SerialConnectorForms\SerialConnectorForms\bin\Debug\
 C:\Users\klaud\source\repos\SerialConnectorForms\SerialConnectorForms\bin\Debug\SerialConnectorForms.pdb
 C:\Users\klaud\source\repos\SerialConnectorForms\SerialConnectorForms\obj\Debug\SerialConnectorForms.exe
 C:\Users\klaud\source\repos\SerialConnectorForms\SerialConnectorForms\obj\Debug\SerialConnectorForms.pdb
+C:\Users\klaud\source\repos\SerialConnector\SerialConnectorForms\bin\Debug\SerialConnectorForms.exe.config
+C:\Users\klaud\source\repos\SerialConnector\SerialConnectorForms\bin\Debug\SerialConnectorForms.exe
+C:\Users\klaud\source\repos\SerialConnector\SerialConnectorForms\bin\Debug\SerialConnectorForms.pdb
+C:\Users\klaud\source\repos\SerialConnector\SerialConnectorForms\obj\Debug\SerialConnectorForms.csprojAssemblyReference.cache
+C:\Users\klaud\source\repos\SerialConnector\SerialConnectorForms\obj\Debug\SerialConnectorForms.Form1.resources
+C:\Users\klaud\source\repos\SerialConnector\SerialConnectorForms\obj\Debug\SerialConnectorForms.Properties.Resources.resources
+C:\Users\klaud\source\repos\SerialConnector\SerialConnectorForms\obj\Debug\SerialConnectorForms.csproj.GenerateResource.cache
+C:\Users\klaud\source\repos\SerialConnector\SerialConnectorForms\obj\Debug\SerialConnectorForms.csproj.CoreCompileInputs.cache
+C:\Users\klaud\source\repos\SerialConnector\SerialConnectorForms\obj\Debug\SerialConnectorForms.exe
+C:\Users\klaud\source\repos\SerialConnector\SerialConnectorForms\obj\Debug\SerialConnectorForms.pdb

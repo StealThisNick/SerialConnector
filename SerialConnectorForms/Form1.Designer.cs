@@ -48,35 +48,23 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.btnSend = new System.Windows.Forms.Button();
             this.tBoxDataOut = new System.Windows.Forms.TextBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.chBoxWrite = new System.Windows.Forms.CheckBox();
-            this.chBoxWriteLine = new System.Windows.Forms.CheckBox();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.lblDataOutLength = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.tBoxDataIn = new System.Windows.Forms.TextBox();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.lblDataInLength = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cOMControlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oPENComToolStripMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.cLOSEComToolStripMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.transmiterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearTransmiterToolStripMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.endLineTransmiterToolStripMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripComboBox2 = new System.Windows.Forms.ToolStripComboBox();
+            this.toolStripTransmiterEndLineComboBox = new System.Windows.Forms.ToolStripComboBox();
             this.reciverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearReciverToolStripMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.showDataReciverToolStripMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripReciverShowDataComboBox = new System.Windows.Forms.ToolStripComboBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.clearTransmiterToolStripMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.oPENComToolStripMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.cLOSEComToolStripMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            this.groupBox11.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.SuspendLayout();
@@ -285,68 +273,7 @@
             this.tBoxDataOut.Name = "tBoxDataOut";
             this.tBoxDataOut.Size = new System.Drawing.Size(348, 20);
             this.tBoxDataOut.TabIndex = 2;
-            this.tBoxDataOut.TextChanged += new System.EventHandler(this.tBoxDataOut_TextChanged);
             this.tBoxDataOut.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tBoxDataOut_KeyDown);
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.chBoxWrite);
-            this.groupBox6.Controls.Add(this.chBoxWriteLine);
-            this.groupBox6.Location = new System.Drawing.Point(806, 98);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(98, 63);
-            this.groupBox6.TabIndex = 6;
-            this.groupBox6.TabStop = false;
-            // 
-            // chBoxWrite
-            // 
-            this.chBoxWrite.AutoSize = true;
-            this.chBoxWrite.Location = new System.Drawing.Point(0, 30);
-            this.chBoxWrite.Name = "chBoxWrite";
-            this.chBoxWrite.Size = new System.Drawing.Size(51, 17);
-            this.chBoxWrite.TabIndex = 1;
-            this.chBoxWrite.Text = "Write";
-            this.chBoxWrite.UseVisualStyleBackColor = true;
-            this.chBoxWrite.CheckedChanged += new System.EventHandler(this.chBoxWrite_CheckedChanged);
-            // 
-            // chBoxWriteLine
-            // 
-            this.chBoxWriteLine.AutoSize = true;
-            this.chBoxWriteLine.Location = new System.Drawing.Point(0, 11);
-            this.chBoxWriteLine.Name = "chBoxWriteLine";
-            this.chBoxWriteLine.Size = new System.Drawing.Size(74, 17);
-            this.chBoxWriteLine.TabIndex = 0;
-            this.chBoxWriteLine.Text = "Write Line";
-            this.chBoxWriteLine.UseVisualStyleBackColor = true;
-            this.chBoxWriteLine.CheckedChanged += new System.EventHandler(this.chBoxWriteLine_CheckedChanged);
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.lblDataOutLength);
-            this.groupBox7.Controls.Add(this.label7);
-            this.groupBox7.Location = new System.Drawing.Point(0, 205);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(130, 37);
-            this.groupBox7.TabIndex = 7;
-            this.groupBox7.TabStop = false;
-            // 
-            // lblDataOutLength
-            // 
-            this.lblDataOutLength.AutoSize = true;
-            this.lblDataOutLength.Location = new System.Drawing.Point(104, 13);
-            this.lblDataOutLength.Name = "lblDataOutLength";
-            this.lblDataOutLength.Size = new System.Drawing.Size(19, 13);
-            this.lblDataOutLength.TabIndex = 1;
-            this.lblDataOutLength.Text = "00";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(9, 13);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(95, 13);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Data OUT Length:";
             // 
             // tBoxDataIn
             // 
@@ -358,34 +285,6 @@
             this.tBoxDataIn.TabIndex = 3;
             this.tBoxDataIn.WordWrap = false;
             // 
-            // groupBox11
-            // 
-            this.groupBox11.Controls.Add(this.lblDataInLength);
-            this.groupBox11.Controls.Add(this.label9);
-            this.groupBox11.Location = new System.Drawing.Point(136, 205);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(131, 37);
-            this.groupBox11.TabIndex = 7;
-            this.groupBox11.TabStop = false;
-            // 
-            // lblDataInLength
-            // 
-            this.lblDataInLength.AutoSize = true;
-            this.lblDataInLength.Location = new System.Drawing.Point(98, 13);
-            this.lblDataInLength.Name = "lblDataInLength";
-            this.lblDataInLength.Size = new System.Drawing.Size(19, 13);
-            this.lblDataInLength.TabIndex = 1;
-            this.lblDataInLength.Text = "00";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(10, 13);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(83, 13);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Data IN Length:";
-            // 
             // menuStrip1
             // 
             this.menuStrip1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -396,23 +295,17 @@
             this.reciverToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1255, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(840, 24);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.exitToolStripMenuItem});
+            this.exitToolStripMenu});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
             this.fileToolStripMenuItem.Text = "File";
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
             // 
             // cOMControlToolStripMenuItem
             // 
@@ -423,6 +316,20 @@
             this.cOMControlToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
             this.cOMControlToolStripMenuItem.Text = "COM Control";
             // 
+            // oPENComToolStripMenu
+            // 
+            this.oPENComToolStripMenu.Name = "oPENComToolStripMenu";
+            this.oPENComToolStripMenu.Size = new System.Drawing.Size(114, 22);
+            this.oPENComToolStripMenu.Text = "OPEN";
+            this.oPENComToolStripMenu.Click += new System.EventHandler(this.oPENComToolStripMenu_Click_1);
+            // 
+            // cLOSEComToolStripMenu
+            // 
+            this.cLOSEComToolStripMenu.Name = "cLOSEComToolStripMenu";
+            this.cLOSEComToolStripMenu.Size = new System.Drawing.Size(114, 22);
+            this.cLOSEComToolStripMenu.Text = "CLOSE";
+            this.cLOSEComToolStripMenu.Click += new System.EventHandler(this.cLOSEComToolStripMenu_Click_1);
+            // 
             // transmiterToolStripMenuItem
             // 
             this.transmiterToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -432,24 +339,32 @@
             this.transmiterToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
             this.transmiterToolStripMenuItem.Text = "Transmiter";
             // 
+            // clearTransmiterToolStripMenu
+            // 
+            this.clearTransmiterToolStripMenu.Name = "clearTransmiterToolStripMenu";
+            this.clearTransmiterToolStripMenu.Size = new System.Drawing.Size(180, 22);
+            this.clearTransmiterToolStripMenu.Text = "Clear";
+            this.clearTransmiterToolStripMenu.Click += new System.EventHandler(this.clearTransmiterToolStripMenu_Click);
+            // 
             // endLineTransmiterToolStripMenu
             // 
             this.endLineTransmiterToolStripMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripComboBox2});
+            this.toolStripTransmiterEndLineComboBox});
             this.endLineTransmiterToolStripMenu.Name = "endLineTransmiterToolStripMenu";
             this.endLineTransmiterToolStripMenu.Size = new System.Drawing.Size(180, 22);
             this.endLineTransmiterToolStripMenu.Text = "End Line";
             // 
-            // toolStripComboBox2
+            // toolStripTransmiterEndLineComboBox
             // 
-            this.toolStripComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.toolStripComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.toolStripComboBox2.Items.AddRange(new object[] {
+            this.toolStripTransmiterEndLineComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.toolStripTransmiterEndLineComboBox.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.toolStripTransmiterEndLineComboBox.Items.AddRange(new object[] {
             "None",
             "Both",
             "New Line"});
-            this.toolStripComboBox2.Name = "toolStripComboBox2";
-            this.toolStripComboBox2.Size = new System.Drawing.Size(121, 23);
+            this.toolStripTransmiterEndLineComboBox.Name = "toolStripTransmiterEndLineComboBox";
+            this.toolStripTransmiterEndLineComboBox.Size = new System.Drawing.Size(121, 23);
+            this.toolStripTransmiterEndLineComboBox.DropDownClosed += new System.EventHandler(this.toolStripTransmiterEndLineComboBox_DropDownClosed);
             // 
             // reciverToolStripMenuItem
             // 
@@ -487,8 +402,6 @@
             // 
             // groupBox12
             // 
-            this.groupBox12.Controls.Add(this.groupBox11);
-            this.groupBox12.Controls.Add(this.groupBox7);
             this.groupBox12.Controls.Add(this.tBoxDataOut);
             this.groupBox12.Controls.Add(this.tBoxDataIn);
             this.groupBox12.Controls.Add(this.btnSend);
@@ -499,33 +412,18 @@
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Monitor";
             // 
-            // clearTransmiterToolStripMenu
+            // exitToolStripMenu
             // 
-            this.clearTransmiterToolStripMenu.Name = "clearTransmiterToolStripMenu";
-            this.clearTransmiterToolStripMenu.Size = new System.Drawing.Size(180, 22);
-            this.clearTransmiterToolStripMenu.Text = "Clear";
-            this.clearTransmiterToolStripMenu.Click += new System.EventHandler(this.clearTransmiterToolStripMenu_Click);
-            // 
-            // oPENComToolStripMenu
-            // 
-            this.oPENComToolStripMenu.Name = "oPENComToolStripMenu";
-            this.oPENComToolStripMenu.Size = new System.Drawing.Size(180, 22);
-            this.oPENComToolStripMenu.Text = "OPEN";
-            this.oPENComToolStripMenu.Click += new System.EventHandler(this.oPENComToolStripMenu_Click_1);
-            // 
-            // cLOSEComToolStripMenu
-            // 
-            this.cLOSEComToolStripMenu.Name = "cLOSEComToolStripMenu";
-            this.cLOSEComToolStripMenu.Size = new System.Drawing.Size(180, 22);
-            this.cLOSEComToolStripMenu.Text = "CLOSE";
-            this.cLOSEComToolStripMenu.Click += new System.EventHandler(this.cLOSEComToolStripMenu_Click_1);
+            this.exitToolStripMenu.Name = "exitToolStripMenu";
+            this.exitToolStripMenu.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenu.Text = "Exit";
+            this.exitToolStripMenu.Click += new System.EventHandler(this.exitToolStripMenu_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1255, 420);
-            this.Controls.Add(this.groupBox6);
+            this.ClientSize = new System.Drawing.Size(840, 326);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.groupBox12);
             this.Controls.Add(this.groupBox1);
@@ -536,12 +434,6 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox12.ResumeLayout(false);
@@ -572,24 +464,14 @@
         private System.Windows.Forms.CheckBox chBoxXonXoff;
         private System.Windows.Forms.CheckBox chBoxRts;
         private System.Windows.Forms.CheckBox chBoxDtr;
-        private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Label lblDataOutLength;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.CheckBox chBoxWrite;
-        private System.Windows.Forms.CheckBox chBoxWriteLine;
-        private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.Label lblDataInLength;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox tBoxDataIn;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cOMControlToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem transmiterToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reciverToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem endLineTransmiterToolStripMenu;
-        private System.Windows.Forms.ToolStripComboBox toolStripComboBox2;
+        private System.Windows.Forms.ToolStripComboBox toolStripTransmiterEndLineComboBox;
         private System.Windows.Forms.ToolStripMenuItem clearReciverToolStripMenu;
         private System.Windows.Forms.ToolStripMenuItem showDataReciverToolStripMenu;
         private System.Windows.Forms.ToolStripComboBox toolStripReciverShowDataComboBox;
@@ -597,6 +479,7 @@
         private System.Windows.Forms.ToolStripMenuItem clearTransmiterToolStripMenu;
         private System.Windows.Forms.ToolStripMenuItem oPENComToolStripMenu;
         private System.Windows.Forms.ToolStripMenuItem cLOSEComToolStripMenu;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenu;
     }
 }
 

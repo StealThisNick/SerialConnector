@@ -37,11 +37,10 @@ namespace SerialConnectorForms
 
             btnSend.Enabled = true;
 
-            chBoxWriteLine.Checked = false;
-            chBoxWrite.Checked = true;
-            sendWith = "Write";
+            sendWith = "Both";
 
             toolStripReciverShowDataComboBox.Text = "Add to Old Data";
+            toolStripTransmiterEndLineComboBox.Text = "Both";
         }
         private void oPENComToolStripMenu_Click_1(object sender, EventArgs e)
         {
@@ -76,14 +75,37 @@ namespace SerialConnectorForms
             if (serialPort1.IsOpen)
             {
                 dataOUT = tBoxDataOut.Text;
-                if(sendWith == "Write")
+                if(sendWith == "None")
                 {
                     serialPort1.Write(dataOUT);
                 }
-                else if(sendWith == "WriteLine")
+                else if(sendWith == "Both")
                 {
-                    serialPort1.WriteLine(dataOUT);
+                    serialPort1.Write(dataOUT + "\r\n");
                 }
+                else if (sendWith == "New Line")
+                {
+                    serialPort1.WriteLine(dataOUT + "\n");
+                }
+            }
+        }
+
+        private void toolStripTransmiterEndLineComboBox_DropDownClosed(object sender, EventArgs e)
+        {
+            //None
+            //Both
+            //New Line
+            if (toolStripTransmiterEndLineComboBox.Text == "None")
+            {
+                sendWith = "None";
+            }
+            else if (toolStripTransmiterEndLineComboBox.Text == "Both")
+            {
+                sendWith = "Both";
+            }
+            else if (toolStripTransmiterEndLineComboBox.Text == "New Line")
+            {
+                sendWith = "New Line";
             }
         }
 
@@ -131,14 +153,6 @@ namespace SerialConnectorForms
             }
         }
 
-
-
-        private void tBoxDataOut_TextChanged(object sender, EventArgs e)
-        {
-            int dataOUTTextLength = tBoxDataOut.TextLength;
-            lblDataOutLength.Text = string.Format("{0:00}", dataOUTTextLength);
-        }
-
         private void tBoxDataOut_KeyDown(object sender, KeyEventArgs e)
         {
             if(e.KeyCode == Keys.Enter)
@@ -155,34 +169,18 @@ namespace SerialConnectorForms
             if (serialPort1.IsOpen)
             {
                 dataOUT = tBoxDataOut.Text;
-                if (sendWith == "Write")
+                if (sendWith == "None")
                 {
                     serialPort1.Write(dataOUT);
                 }
-                else if (sendWith == "WriteLine")
+                else if (sendWith == "Both")
                 {
-                    serialPort1.WriteLine(dataOUT);
+                    serialPort1.Write(dataOUT + "\r\n");
                 }
-            }
-        }
-
-        private void chBoxWriteLine_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chBoxWriteLine.Checked)
-            {
-                sendWith = "WriteLine";
-                chBoxWrite.Checked = false;
-                chBoxWriteLine.Checked = true;
-            }
-        }
-
-        private void chBoxWrite_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chBoxWrite.Checked)
-            {
-                sendWith = "Write";
-                chBoxWriteLine.Checked = false;
-                chBoxWrite.Checked = true;
+                else if (sendWith == "New Line")
+                {
+                    serialPort1.WriteLine(dataOUT + "\n");
+                }
             }
         }
 
@@ -194,17 +192,14 @@ namespace SerialConnectorForms
 
         private void ShowData(object sender, EventArgs e)
         {
-            int dataInLength = dataIN.Length;
-            lblDataInLength.Text = string.Format("{0:00}", dataInLength);
-
             if (toolStripReciverShowDataComboBox.Text == "Always Update")
             {
                 tBoxDataIn.Text = dataIN;
             }
             else if (toolStripReciverShowDataComboBox.Text == "Add to Old Data")
             {
-                //tBoxDataIn.Text += dataIN;
-                tBoxDataIn.Text = tBoxDataIn.Text.Insert(0, dataIN);
+                tBoxDataIn.Text += dataIN;
+                //tBoxDataIn.Text = tBoxDataIn.Text.Insert(0, dataIN);
             }
         }
 
@@ -214,6 +209,11 @@ namespace SerialConnectorForms
             {
                 tBoxDataIn.Text = "";
             }
+        }
+
+        private void exitToolStripMenu_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
