@@ -89,7 +89,7 @@
             this.groupBox1.Controls.Add(this.cBoxParity);
             this.groupBox1.Controls.Add(this.cBoxBaudRate);
             this.groupBox1.Controls.Add(this.cBoxCOMPORT);
-            this.groupBox1.Location = new System.Drawing.Point(12, 27);
+            this.groupBox1.Location = new System.Drawing.Point(12, 69);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(315, 230);
             this.groupBox1.TabIndex = 0;
@@ -252,7 +252,7 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(12, 263);
+            this.progressBar1.Location = new System.Drawing.Point(12, 305);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(292, 19);
             this.progressBar1.TabIndex = 2;
@@ -295,7 +295,7 @@
             this.reciverToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(840, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(989, 24);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -405,7 +405,7 @@
             this.groupBox12.Controls.Add(this.tBoxDataOut);
             this.groupBox12.Controls.Add(this.tBoxDataIn);
             this.groupBox12.Controls.Add(this.btnSend);
-            this.groupBox12.Location = new System.Drawing.Point(340, 29);
+            this.groupBox12.Location = new System.Drawing.Point(340, 71);
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.Size = new System.Drawing.Size(460, 275);
             this.groupBox12.TabIndex = 8;
@@ -423,7 +423,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(840, 326);
+            this.ClientSize = new System.Drawing.Size(989, 466);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.groupBox12);
             this.Controls.Add(this.groupBox1);

@@ -37,10 +37,10 @@ namespace SerialConnectorForms
 
             btnSend.Enabled = true;
 
-            sendWith = "Both";
+            sendWith = "New Line";
 
             toolStripReciverShowDataComboBox.Text = "Add to Old Data";
-            toolStripTransmiterEndLineComboBox.Text = "Both";
+            toolStripTransmiterEndLineComboBox.Text = "New Line";
         }
         private void oPENComToolStripMenu_Click_1(object sender, EventArgs e)
         {
@@ -85,16 +85,13 @@ namespace SerialConnectorForms
                 }
                 else if (sendWith == "New Line")
                 {
-                    serialPort1.WriteLine(dataOUT + "\n");
+                    serialPort1.WriteLine(dataOUT + "\r");
                 }
             }
         }
 
         private void toolStripTransmiterEndLineComboBox_DropDownClosed(object sender, EventArgs e)
         {
-            //None
-            //Both
-            //New Line
             if (toolStripTransmiterEndLineComboBox.Text == "None")
             {
                 sendWith = "None";
@@ -179,7 +176,7 @@ namespace SerialConnectorForms
                 }
                 else if (sendWith == "New Line")
                 {
-                    serialPort1.WriteLine(dataOUT + "\n");
+                    serialPort1.WriteLine(dataOUT + "\r");
                 }
             }
         }
@@ -198,8 +195,7 @@ namespace SerialConnectorForms
             }
             else if (toolStripReciverShowDataComboBox.Text == "Add to Old Data")
             {
-                tBoxDataIn.Text += dataIN;
-                //tBoxDataIn.Text = tBoxDataIn.Text.Insert(0, dataIN);
+                tBoxDataIn.Text += dataIN + "\r\n";
             }
         }
 
@@ -215,5 +211,6 @@ namespace SerialConnectorForms
         {
             Application.Exit();
         }
+
     }
 }
