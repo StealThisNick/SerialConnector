@@ -150,36 +150,30 @@ namespace SerialConnectorForms
             }
         }
 
-        private void tBoxDataOut_KeyDown(object sender, KeyEventArgs e)
-        {
-            if(e.KeyCode == Keys.Enter)
-            {
-                this.EnterHandler();
-                e.Handled = true;
-                e.SuppressKeyPress = true;
-                
-            }
-        }
+        //private void tBoxDataOut_KeyDown(object sender, KeyEventArgs e)
+        //{
 
-        private void EnterHandler()
-        {
-            if (serialPort1.IsOpen)
-            {
-                dataOUT = tBoxDataOut.Text;
-                if (sendWith == "None")
-                {
-                    serialPort1.Write(dataOUT);
-                }
-                else if (sendWith == "Both")
-                {
-                    serialPort1.Write(dataOUT + "\r\n");
-                }
-                else if (sendWith == "New Line")
-                {
-                    serialPort1.WriteLine(dataOUT + "\r");
-                }
-            }
-        }
+        //}
+
+        //private void EnterHandler()
+        //{
+        //    if (serialPort1.IsOpen)
+        //    {
+        //        dataOUT = tBoxDataOut.Text;
+        //        if (sendWith == "None")
+        //        {
+        //            serialPort1.Write(dataOUT);
+        //        }
+        //        else if (sendWith == "Both")
+        //        {
+        //            serialPort1.Write(dataOUT + "\r\n");
+        //        }
+        //        else if (sendWith == "New Line")
+        //        {
+        //            serialPort1.WriteLine(dataOUT + "\r");
+        //        }
+        //    }
+        //}
 
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
@@ -212,5 +206,134 @@ namespace SerialConnectorForms
             Application.Exit();
         }
 
+        private void btnCloseHand_Click(object sender, EventArgs e)
+        {
+            serialPort1.Write("GC" + "\r");
+        }
+
+        private void btnOpenHand_Click(object sender, EventArgs e)
+        {
+            serialPort1.Write("GO" + "\r");
+        }
+
+        private void btnWaistLeft_Click(object sender, EventArgs e)
+        {
+            int rotation = 0;
+            int speed = 0;
+            speed = Convert.ToInt32(tBoxJogSpeed.Text);
+            rotation = Convert.ToInt32(tBoxRotationalJoint.Text);
+            serialPort1.Write("SP " + speed + "\r");
+            serialPort1.Write("MJ " + (-rotation) + ",0,0,0,0,0" + "\r");
+        }
+
+        private void btnWaistRigth_Click(object sender, EventArgs e)
+        {
+            int rotation = 0;
+            int speed = 0;
+            speed = Convert.ToInt32(tBoxJogSpeed.Text);
+            rotation = Convert.ToInt32(tBoxRotationalJoint.Text);
+            serialPort1.Write("SP " + speed + "\r");
+            serialPort1.Write("MJ " + rotation + ",0,0,0,0,0" + "\r");
+        }
+
+        private void btnShoulderLeft_Click(object sender, EventArgs e)
+        {
+            int rotation = 0;
+            int speed = 0;
+            speed = Convert.ToInt32(tBoxJogSpeed.Text);
+            rotation = Convert.ToInt32(tBoxRotationalJoint.Text);
+            serialPort1.Write("SP " + speed + "\r");
+            serialPort1.Write("MJ " + "0," + (-rotation) + ",0,0,0,0" + "\r");
+        }
+
+        private void btnShoulderRight_Click(object sender, EventArgs e)
+        {
+            int rotation = 0;
+            int speed = 0;
+            speed = Convert.ToInt32(tBoxJogSpeed.Text);
+            rotation = Convert.ToInt32(tBoxRotationalJoint.Text);
+            serialPort1.Write("SP " + speed + "\r");
+            serialPort1.Write("MJ " + "0," + (rotation) + ",0,0,0,0" + "\r");
+        }
+
+        private void btnElbowLeft_Click(object sender, EventArgs e)
+        {
+            int rotation = 0;
+            int speed = 0;
+            speed = Convert.ToInt32(tBoxJogSpeed.Text);
+            rotation = Convert.ToInt32(tBoxRotationalJoint.Text);
+            serialPort1.Write("SP " + speed + "\r");
+            serialPort1.Write("MJ " + "0,0," + (-rotation) + ",0,0,0" + "\r");
+        }
+
+        private void btnElbowRight_Click(object sender, EventArgs e)
+        {
+            int rotation = 0;
+            int speed = 0;
+            speed = Convert.ToInt32(tBoxJogSpeed.Text);
+            rotation = Convert.ToInt32(tBoxRotationalJoint.Text);
+            serialPort1.Write("SP " + speed + "\r");
+            serialPort1.Write("MJ " + "0,0," + (rotation) + ",0,0,0" + "\r");
+        }
+
+        private void btnTwistLeft_Click(object sender, EventArgs e)
+        {
+            int rotation = 0;
+            int speed = 0;
+            speed = Convert.ToInt32(tBoxJogSpeed.Text);
+            rotation = Convert.ToInt32(tBoxRotationalJoint.Text);
+            serialPort1.Write("SP " + speed + "\r");
+            serialPort1.Write("MJ " + "0,0,0," + (-rotation) + ",0,0" + "\r");
+        }
+
+        private void btnTwistRight_Click(object sender, EventArgs e)
+        {
+            int rotation = 0;
+            int speed = 0;
+            speed = Convert.ToInt32(tBoxJogSpeed.Text);
+            rotation = Convert.ToInt32(tBoxRotationalJoint.Text);
+            serialPort1.Write("SP " + speed + "\r");
+            serialPort1.Write("MJ " + "0,0,0," + (rotation) + ",0,0" + "\r");
+        }
+
+        private void btnPitchLeft_Click(object sender, EventArgs e)
+        {
+            int rotation = 0;
+            int speed = 0;
+            speed = Convert.ToInt32(tBoxJogSpeed.Text);
+            rotation = Convert.ToInt32(tBoxRotationalJoint.Text);
+            serialPort1.Write("SP " + speed + "\r");
+            serialPort1.Write("MJ " + "0,0,0,0," + (-rotation) + ",0" + "\r");
+        }
+
+        private void btnPitchRight_Click(object sender, EventArgs e)
+        {
+            int rotation = 0;
+            int speed = 0;
+            speed = Convert.ToInt32(tBoxJogSpeed.Text);
+            rotation = Convert.ToInt32(tBoxRotationalJoint.Text);
+            serialPort1.Write("SP " + speed + "\r");
+            serialPort1.Write("MJ " + "0,0,0,0," + (rotation) + ",0" + "\r");
+        }
+
+        private void btnRollLeft_Click(object sender, EventArgs e)
+        {
+            int rotation = 0;
+            int speed = 0;
+            speed = Convert.ToInt32(tBoxJogSpeed.Text);
+            rotation = Convert.ToInt32(tBoxRotationalJoint.Text);
+            serialPort1.Write("SP " + speed + "\r");
+            serialPort1.Write("MJ " + "0,0,0,0,0," + (-rotation) + "\r");
+        }
+
+        private void btnRollRight_Click(object sender, EventArgs e)
+        {
+            int rotation = 0;
+            int speed = 0;
+            speed = Convert.ToInt32(tBoxJogSpeed.Text);
+            rotation = Convert.ToInt32(tBoxRotationalJoint.Text);
+            serialPort1.Write("SP " + speed + "\r");
+            serialPort1.Write("MJ " + "0,0,0,0,0," + (rotation) + "\r");
+        }
     }
 }
