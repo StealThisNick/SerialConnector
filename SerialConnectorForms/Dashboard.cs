@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace SerialConnectorForms
 {
-    public partial class Form1 : Form
+    public partial class Dashboard : Form
     {
         string dataOUT;
         string sendWith;
         string dataIN;
-        public Form1()
+        public Dashboard()
         {
             InitializeComponent();
         }
@@ -42,6 +42,7 @@ namespace SerialConnectorForms
             toolStripReciverShowDataComboBox.Text = "Add to Old Data";
             toolStripTransmiterEndLineComboBox.Text = "New Line";
         }
+
         private void oPENComToolStripMenu_Click_1(object sender, EventArgs e)
         {
             try
@@ -334,6 +335,156 @@ namespace SerialConnectorForms
             rotation = Convert.ToInt32(tBoxRotationalJoint.Text);
             serialPort1.Write("SP " + speed + "\r");
             serialPort1.Write("MJ " + "0,0,0,0,0," + (rotation) + "\r");
+        }
+
+        private void gBoxXYZJoints_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics l = e.Graphics;
+            Pen z = new Pen(Color.Blue, 1);
+            Pen x = new Pen(Color.Red, 1);
+            Pen y = new Pen(Color.Green, 1);
+            l.DrawLine(z, 20, 20, 20, 130);
+            l.DrawLine(x, 20, 130, 130, 130);
+            l.DrawLine(y, 20, 130, 130, 45);
+            l.Dispose();
+        }
+
+        private void btnSetXYZ_Click(object sender, EventArgs e)
+        {
+            setterXYZ newsetterXYZ = new setterXYZ();
+            newsetterXYZ.Show();
+        }
+
+        private void btnCLeft_Click(object sender, EventArgs e)
+        {
+            int speed = 0;
+            int abcCor = 0;
+            speed = Convert.ToInt32(tBoxXYZSpeed.Text);
+            abcCor = Convert.ToInt32(tBoxABCCor.Text);
+            serialPort1.Write("SP " + speed + "\r");
+            serialPort1.Write("MP " + "0,0,0,0,0," + (-abcCor) + "\r");
+            //serialPort1.Write("MP " + "0,0,0,0,0," + (abcCor) + ",L" + "\r");
+        }
+
+        private void btnCRight_Click(object sender, EventArgs e)
+        {
+            int speed = 0;
+            int abcCor = 0;
+            speed = Convert.ToInt32(tBoxXYZSpeed.Text);
+            abcCor = Convert.ToInt32(tBoxABCCor.Text);
+            serialPort1.Write("SP " + speed + "\r");
+            serialPort1.Write("MP " + "0,0,0,0,0," + (abcCor) + "\r");
+            //serialPort1.Write("MP " + "0,0,0,0,0," + (abcCor) + ",R" + "\r");
+        }
+
+        private void btnZUp_Click(object sender, EventArgs e)
+        {
+            int xyzCor = 0;
+            int speed = 0;
+            xyzCor = Convert.ToInt32(tBoxXYZCor.Text);
+            speed = Convert.ToInt32(tBoxXYZSpeed.Text);
+            serialPort1.Write("SP " + speed + "\r");
+            serialPort1.Write("MP " + "0,0," + (xyzCor) + ",0,0,0" + "\r");
+            //serialPort1.Write("MP " + "0,0," + (xyzCor) + ",0,0,0" + ",A" + "\r");
+        }
+
+        private void btnZDown_Click(object sender, EventArgs e)
+        {
+            int xyzCor = 0;
+            int speed = 0;
+            xyzCor = Convert.ToInt32(tBoxXYZCor.Text);
+            speed = Convert.ToInt32(tBoxXYZSpeed.Text);
+            serialPort1.Write("SP " + speed + "\r");
+            serialPort1.Write("MP " + "0,0," + (-xyzCor) + ",0,0,0" + "\r");
+            //serialPort1.Write("MP " + "0,0," + (xyzCor) + ",0,0,0" + ",B" + "\r");
+        }
+
+        private void btnBLeft_Click(object sender, EventArgs e)
+        {
+            int speed = 0;
+            int abcCor = 0;
+            speed = Convert.ToInt32(tBoxXYZSpeed.Text);
+            abcCor = Convert.ToInt32(tBoxABCCor.Text);
+            serialPort1.Write("SP " + speed + "\r");
+            serialPort1.Write("MP " + "0,0,0,0," + (-abcCor) + ",0" + "\r");
+            //serialPort1.Write("MP " + "0,0,0,0," + (abcCor) + ",0" + ",L" + "\r");
+        }
+
+        private void btnBRight_Click(object sender, EventArgs e)
+        {
+            int speed = 0;
+            int abcCor = 0;
+            speed = Convert.ToInt32(tBoxXYZSpeed.Text);
+            abcCor = Convert.ToInt32(tBoxABCCor.Text);
+            serialPort1.Write("SP " + speed + "\r");
+            serialPort1.Write("MP " + "0,0,0,0," + (abcCor) + ",0" + "\r");
+            //serialPort1.Write("MP " + "0,0,0,0," + (abcCor) + ",0" + ",R" + "\r");
+        }
+
+        private void btnYUp_Click(object sender, EventArgs e)
+        {
+            int xyzCor = 0;
+            int speed = 0;
+            xyzCor = Convert.ToInt32(tBoxXYZCor.Text);
+            speed = Convert.ToInt32(tBoxXYZSpeed.Text);
+            serialPort1.Write("SP " + speed + "\r");
+            serialPort1.Write("MP " + "0," + (xyzCor) + ",0,0,0,0" + "\r");
+            //serialPort1.Write("MP " + "0," + (xyzCor) + ",0,0,0,0" + ",A" + "\r");
+        }
+
+        private void btnYDown_Click(object sender, EventArgs e)
+        {
+            int xyzCor = 0;
+            int speed = 0;
+            xyzCor = Convert.ToInt32(tBoxXYZCor.Text);
+            speed = Convert.ToInt32(tBoxXYZSpeed.Text);
+            serialPort1.Write("SP " + speed + "\r");
+            serialPort1.Write("MP " + "0," + (-xyzCor) + ",0,0,0,0" + "\r");
+            //serialPort1.Write("MP " + "0," + (xyzCor) + ",0,0,0,0" + ",B" + "\r");
+        }
+
+        private void btnALeft_Click(object sender, EventArgs e)
+        {
+            int speed = 0;
+            int abcCor = 0;
+            speed = Convert.ToInt32(tBoxXYZSpeed.Text);
+            abcCor = Convert.ToInt32(tBoxABCCor.Text);
+            serialPort1.Write("SP " + speed + "\r");
+            serialPort1.Write("MP " + "0,0,0," + (-abcCor) + ",0,0" + "\r");
+            //serialPort1.Write("MP " + "0,0,0," + (abcCor) + ",0,0" + ",L" + "\r");
+        }
+
+        private void btnARight_Click(object sender, EventArgs e)
+        {
+            int speed = 0;
+            int abcCor = 0;
+            speed = Convert.ToInt32(tBoxXYZSpeed.Text);
+            abcCor = Convert.ToInt32(tBoxABCCor.Text);
+            serialPort1.Write("SP " + speed + "\r");
+            serialPort1.Write("MP " + "0,0,0," + (abcCor) + ",0,0" + "\r");
+            //serialPort1.Write("MP " + "0,0,0," + (abcCor) + ",0,0" + ",R" + "\r");
+        }
+
+        private void btnXUp_Click(object sender, EventArgs e)
+        {
+            int xyzCor = 0;
+            int speed = 0;
+            xyzCor = Convert.ToInt32(tBoxXYZCor.Text);
+            speed = Convert.ToInt32(tBoxXYZSpeed.Text);
+            serialPort1.Write("SP " + speed + "\r");
+            serialPort1.Write("MP " + (xyzCor) + ",0,0,0,0,0" + "\r");
+            //serialPort1.Write("MP " + (xyzCor) + ",0,0,0,0,0" + ",A" + "\r");
+        }
+
+        private void btnXDown_Click(object sender, EventArgs e)
+        {
+            int xyzCor = 0;
+            int speed = 0;
+            xyzCor = Convert.ToInt32(tBoxXYZCor.Text);
+            speed = Convert.ToInt32(tBoxXYZSpeed.Text);
+            serialPort1.Write("SP " + speed + "\r");
+            serialPort1.Write("MP " + (-xyzCor) + ",0,0,0,0,0" + "\r");
+            //serialPort1.Write("MP " + (xyzCor) + ",0,0,0,0,0" + ",B" + "\r");
         }
     }
 }
