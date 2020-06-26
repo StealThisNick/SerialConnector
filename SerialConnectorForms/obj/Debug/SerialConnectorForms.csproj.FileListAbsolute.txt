@@ -19,3 +19,4 @@ C:\Users\klaud\source\repos\SerialConnector\SerialConnectorForms\obj\Debug\Seria
 C:\Users\klaud\source\repos\SerialConnector\SerialConnectorForms\obj\Debug\SerialConnectorForms.pdb
 C:\Users\klaud\source\repos\SerialConnector\SerialConnectorForms\obj\Debug\SerialConnectorForms.Dashboard.resources
 C:\Users\klaud\source\repos\SerialConnector\SerialConnectorForms\obj\Debug\SerialConnectorForms.setterXYZ.resources
+C:\Users\klaud\source\repos\SerialConnector\SerialConnectorForms\obj\Debug\SerialConnectorForms.JOG_Operator.resources

@@ -53,6 +53,12 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="JOG_Operator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JOG_Operator.Designer.cs">
+      <DependentUpon>JOG_Operator.cs</DependentUpon>
+    </Compile>
     <Compile Include="setterXYZ.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JOG_Operator.resx">
+      <DependentUpon>JOG_Operator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="setterXYZ.resx">
       <DependentUpon>setterXYZ.cs</DependentUpon>

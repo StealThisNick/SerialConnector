@@ -16,6 +16,7 @@ namespace SerialConnectorForms
         string dataOUT;
         string sendWith;
         string dataIN;
+        public static SerialPort serialPortPublic = new SerialPort();
         public Dashboard()
         {
             InitializeComponent();
@@ -23,6 +24,7 @@ namespace SerialConnectorForms
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            serialPortPublic = serialPort1;
             string[] ports = SerialPort.GetPortNames();
             cBoxCOMPORT.Items.AddRange(ports);
 
@@ -55,6 +57,7 @@ namespace SerialConnectorForms
 
                 serialPort1.Open();
                 progressBar1.Value = 100;
+                serialPortPublic = serialPort1;
             }
 
             catch (Exception err)
@@ -86,7 +89,7 @@ namespace SerialConnectorForms
                 }
                 else if (sendWith == "New Line")
                 {
-                    serialPort1.WriteLine(dataOUT + "\r");
+                    serialPort1.Write(dataOUT + "\r");
                 }
             }
         }
@@ -485,6 +488,12 @@ namespace SerialConnectorForms
             serialPort1.Write("SP " + speed + "\r");
             serialPort1.Write("MP " + (-xyzCor) + ",0,0,0,0,0" + "\r");
             //serialPort1.Write("MP " + (xyzCor) + ",0,0,0,0,0" + ",B" + "\r");
+        }
+
+        private void oPENToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            JOG_Operator newJOG_Operator = new JOG_Operator();
+            newJOG_Operator.Show();
         }
     }
 }

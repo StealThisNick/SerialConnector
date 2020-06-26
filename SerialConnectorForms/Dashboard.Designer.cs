@@ -119,6 +119,8 @@
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.tBoxABCCor = new System.Windows.Forms.TextBox();
+            this.jogOperatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oPENToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.groupBox12.SuspendLayout();
@@ -351,7 +353,8 @@
             this.fileToolStripMenuItem,
             this.cOMControlToolStripMenuItem,
             this.transmiterToolStripMenuItem,
-            this.reciverToolStripMenuItem});
+            this.reciverToolStripMenuItem,
+            this.jogOperatorToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(989, 24);
@@ -1060,6 +1063,21 @@
             this.tBoxABCCor.TabIndex = 27;
             this.tBoxABCCor.Text = "5";
             // 
+            // jogOperatorToolStripMenuItem
+            // 
+            this.jogOperatorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.oPENToolStripMenuItem});
+            this.jogOperatorToolStripMenuItem.Name = "jogOperatorToolStripMenuItem";
+            this.jogOperatorToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
+            this.jogOperatorToolStripMenuItem.Text = "Jog Operator";
+            // 
+            // oPENToolStripMenuItem
+            // 
+            this.oPENToolStripMenuItem.Name = "oPENToolStripMenuItem";
+            this.oPENToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.oPENToolStripMenuItem.Text = "OPEN";
+            this.oPENToolStripMenuItem.Click += new System.EventHandler(this.oPENToolStripMenuItem_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1093,8 +1111,6 @@
         }
 
         #endregion
-
-        private System.IO.Ports.SerialPort serialPort1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -1184,6 +1200,9 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TextBox tBoxABCCor;
         private System.Windows.Forms.Button btnZUp;
+        private System.Windows.Forms.ToolStripMenuItem jogOperatorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem oPENToolStripMenuItem;
+        public System.IO.Ports.SerialPort serialPort1;
     }
 }
 
