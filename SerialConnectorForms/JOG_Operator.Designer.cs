@@ -54,8 +54,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.jogJOINT = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -89,6 +87,8 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.jogXYZ = new System.Windows.Forms.GroupBox();
+            this.rBtnJointJog = new System.Windows.Forms.RadioButton();
+            this.rBtnXyzJog = new System.Windows.Forms.RadioButton();
             this.gBoxJOG.SuspendLayout();
             this.jogJOINT.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -101,9 +101,10 @@
             // 
             // gBoxJOG
             // 
+            this.gBoxJOG.Controls.Add(this.jogXYZ);
+            this.gBoxJOG.Controls.Add(this.rBtnXyzJog);
+            this.gBoxJOG.Controls.Add(this.rBtnJointJog);
             this.gBoxJOG.Controls.Add(this.jogJOINT);
-            this.gBoxJOG.Controls.Add(this.radioButton2);
-            this.gBoxJOG.Controls.Add(this.radioButton1);
             this.gBoxJOG.Controls.Add(this.btnOpenHand);
             this.gBoxJOG.Controls.Add(this.btnCloseHand);
             this.gBoxJOG.Location = new System.Drawing.Point(12, 12);
@@ -350,28 +351,6 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Waist";
             // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(255, 83);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(76, 17);
-            this.radioButton1.TabIndex = 25;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "JOINT Jog";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(255, 106);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(66, 17);
-            this.radioButton2.TabIndex = 26;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "XYZ Jog";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
             // jogJOINT
             // 
             this.jogJOINT.Controls.Add(this.groupBox2);
@@ -474,6 +453,7 @@
             this.gBoxXYZJoints.Size = new System.Drawing.Size(228, 160);
             this.gBoxXYZJoints.TabIndex = 25;
             this.gBoxXYZJoints.TabStop = false;
+            this.gBoxXYZJoints.Paint += new System.Windows.Forms.PaintEventHandler(this.gBoxXYZJoints_Paint);
             // 
             // btnZUp
             // 
@@ -483,6 +463,7 @@
             this.btnZUp.TabIndex = 39;
             this.btnZUp.Text = "↑";
             this.btnZUp.UseVisualStyleBackColor = true;
+            this.btnZUp.Click += new System.EventHandler(this.btnZUp_Click);
             // 
             // label24
             // 
@@ -525,6 +506,7 @@
             this.btnXDown.TabIndex = 35;
             this.btnXDown.Text = "↓";
             this.btnXDown.UseVisualStyleBackColor = true;
+            this.btnXDown.Click += new System.EventHandler(this.btnXDown_Click);
             // 
             // btnXUp
             // 
@@ -534,6 +516,7 @@
             this.btnXUp.TabIndex = 34;
             this.btnXUp.Text = "↑";
             this.btnXUp.UseVisualStyleBackColor = true;
+            this.btnXUp.Click += new System.EventHandler(this.btnXUp_Click);
             // 
             // btnYDown
             // 
@@ -543,6 +526,7 @@
             this.btnYDown.TabIndex = 33;
             this.btnYDown.Text = "↓";
             this.btnYDown.UseVisualStyleBackColor = true;
+            this.btnYDown.Click += new System.EventHandler(this.btnYDown_Click);
             // 
             // btnYUp
             // 
@@ -552,6 +536,7 @@
             this.btnYUp.TabIndex = 32;
             this.btnYUp.Text = "↑";
             this.btnYUp.UseVisualStyleBackColor = true;
+            this.btnYUp.Click += new System.EventHandler(this.btnYUp_Click);
             // 
             // btnZDown
             // 
@@ -561,6 +546,7 @@
             this.btnZDown.TabIndex = 31;
             this.btnZDown.Text = "↓";
             this.btnZDown.UseVisualStyleBackColor = true;
+            this.btnZDown.Click += new System.EventHandler(this.btnZDown_Click);
             // 
             // btnARight
             // 
@@ -570,6 +556,7 @@
             this.btnARight.TabIndex = 28;
             this.btnARight.Text = ">";
             this.btnARight.UseVisualStyleBackColor = true;
+            this.btnARight.Click += new System.EventHandler(this.btnARight_Click);
             // 
             // btnALeft
             // 
@@ -579,6 +566,7 @@
             this.btnALeft.TabIndex = 29;
             this.btnALeft.Text = "<";
             this.btnALeft.UseVisualStyleBackColor = true;
+            this.btnALeft.Click += new System.EventHandler(this.btnALeft_Click);
             // 
             // btnBRight
             // 
@@ -588,6 +576,7 @@
             this.btnBRight.TabIndex = 26;
             this.btnBRight.Text = ">";
             this.btnBRight.UseVisualStyleBackColor = true;
+            this.btnBRight.Click += new System.EventHandler(this.btnBRight_Click);
             // 
             // btnBLeft
             // 
@@ -597,6 +586,7 @@
             this.btnBLeft.TabIndex = 27;
             this.btnBLeft.Text = "<";
             this.btnBLeft.UseVisualStyleBackColor = true;
+            this.btnBLeft.Click += new System.EventHandler(this.btnBLeft_Click);
             // 
             // btnCRight
             // 
@@ -606,6 +596,7 @@
             this.btnCRight.TabIndex = 25;
             this.btnCRight.Text = ">";
             this.btnCRight.UseVisualStyleBackColor = true;
+            this.btnCRight.Click += new System.EventHandler(this.btnCRight_Click);
             // 
             // btnCLeft
             // 
@@ -615,6 +606,7 @@
             this.btnCLeft.TabIndex = 25;
             this.btnCLeft.Text = "<";
             this.btnCLeft.UseVisualStyleBackColor = true;
+            this.btnCLeft.Click += new System.EventHandler(this.btnCLeft_Click);
             // 
             // label21
             // 
@@ -723,18 +715,41 @@
             this.jogXYZ.Controls.Add(this.gBoxXYZJoints);
             this.jogXYZ.Controls.Add(this.groupBox5);
             this.jogXYZ.Controls.Add(this.groupBox4);
-            this.jogXYZ.Location = new System.Drawing.Point(445, 38);
+            this.jogXYZ.Location = new System.Drawing.Point(6, 19);
             this.jogXYZ.Name = "jogXYZ";
             this.jogXYZ.Size = new System.Drawing.Size(243, 312);
             this.jogXYZ.TabIndex = 14;
             this.jogXYZ.TabStop = false;
             // 
+            // rBtnJointJog
+            // 
+            this.rBtnJointJog.AutoSize = true;
+            this.rBtnJointJog.Location = new System.Drawing.Point(255, 87);
+            this.rBtnJointJog.Name = "rBtnJointJog";
+            this.rBtnJointJog.Size = new System.Drawing.Size(76, 17);
+            this.rBtnJointJog.TabIndex = 20;
+            this.rBtnJointJog.TabStop = true;
+            this.rBtnJointJog.Text = "JOINT Jog";
+            this.rBtnJointJog.UseVisualStyleBackColor = true;
+            this.rBtnJointJog.CheckedChanged += new System.EventHandler(this.rBtnJointJog_CheckedChanged);
+            // 
+            // rBtnXyzJog
+            // 
+            this.rBtnXyzJog.AutoSize = true;
+            this.rBtnXyzJog.Location = new System.Drawing.Point(255, 110);
+            this.rBtnXyzJog.Name = "rBtnXyzJog";
+            this.rBtnXyzJog.Size = new System.Drawing.Size(66, 17);
+            this.rBtnXyzJog.TabIndex = 21;
+            this.rBtnXyzJog.TabStop = true;
+            this.rBtnXyzJog.Text = "XYZ Jog";
+            this.rBtnXyzJog.UseVisualStyleBackColor = true;
+            this.rBtnXyzJog.CheckedChanged += new System.EventHandler(this.rBtnXyzJog_CheckedChanged);
+            // 
             // JOG_Operator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 437);
-            this.Controls.Add(this.jogXYZ);
+            this.ClientSize = new System.Drawing.Size(427, 373);
             this.Controls.Add(this.gBoxJOG);
             this.Name = "JOG_Operator";
             this.Text = "JOG_Operator";
@@ -789,8 +804,6 @@
         private System.Windows.Forms.GroupBox jogJOINT;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TextBox tBoxABCCor;
@@ -821,5 +834,7 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox jogXYZ;
+        private System.Windows.Forms.RadioButton rBtnXyzJog;
+        private System.Windows.Forms.RadioButton rBtnJointJog;
     }
 }

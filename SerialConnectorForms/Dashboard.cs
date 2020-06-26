@@ -49,15 +49,26 @@ namespace SerialConnectorForms
         {
             try
             {
-                serialPort1.PortName = cBoxCOMPORT.Text;
-                serialPort1.BaudRate = Convert.ToInt32(cBoxBaudRate.Text);
-                serialPort1.DataBits = Convert.ToInt32(cBoxDataBits.Text);
-                serialPort1.StopBits = (StopBits)Enum.Parse(typeof(StopBits), cBoxStopBits.Text);
-                serialPort1.Parity = (Parity)Enum.Parse(typeof(Parity), cBoxParity.Text);
+                serialPortPublic.PortName = cBoxCOMPORT.Text;
+                serialPortPublic.BaudRate = Convert.ToInt32(cBoxBaudRate.Text);
+                serialPortPublic.DataBits = Convert.ToInt32(cBoxDataBits.Text);
+                serialPortPublic.StopBits = (StopBits)Enum.Parse(typeof(StopBits), cBoxStopBits.Text);
+                serialPortPublic.Parity = (Parity)Enum.Parse(typeof(Parity), cBoxParity.Text);
 
-                serialPort1.Open();
+                serialPortPublic.Open();
                 progressBar1.Value = 100;
-                serialPortPublic = serialPort1;
+                //serialPortPublic = serialPort1;
+
+
+                //serialPort1.PortName = cBoxCOMPORT.Text;
+                //serialPort1.BaudRate = Convert.ToInt32(cBoxBaudRate.Text);
+                //serialPort1.DataBits = Convert.ToInt32(cBoxDataBits.Text);
+                //serialPort1.StopBits = (StopBits)Enum.Parse(typeof(StopBits), cBoxStopBits.Text);
+                //serialPort1.Parity = (Parity)Enum.Parse(typeof(Parity), cBoxParity.Text);
+
+                //serialPort1.Open();
+                //progressBar1.Value = 100;
+                //serialPortPublic = serialPort1;
             }
 
             catch (Exception err)
@@ -67,29 +78,29 @@ namespace SerialConnectorForms
         }
         private void cLOSEComToolStripMenu_Click_1(object sender, EventArgs e)
         {
-            if (serialPort1.IsOpen)
+            if (serialPortPublic.IsOpen)
             {
-                serialPort1.Close();
+                serialPortPublic.Close();
                 progressBar1.Value = 0;
             }
         }
 
         private void btnSend_Click(object sender, EventArgs e)
         {
-            if (serialPort1.IsOpen)
+            if (serialPortPublic.IsOpen)
             {
                 dataOUT = tBoxDataOut.Text;
                 if(sendWith == "None")
                 {
-                    serialPort1.Write(dataOUT);
+                    serialPortPublic.Write(dataOUT);
                 }
                 else if(sendWith == "Both")
                 {
-                    serialPort1.Write(dataOUT + "\r\n");
+                    serialPortPublic.Write(dataOUT + "\r\n");
                 }
                 else if (sendWith == "New Line")
                 {
-                    serialPort1.Write(dataOUT + "\r");
+                    serialPortPublic.Write(dataOUT + "\r");
                 }
             }
         }
@@ -114,11 +125,11 @@ namespace SerialConnectorForms
         {
             if(chBoxDtr.Checked)
             {
-                serialPort1.DtrEnable = true;
+                serialPortPublic.DtrEnable = true;
             }
             else
             {
-                serialPort1.DtrEnable = false;
+                serialPortPublic.DtrEnable = false;
             }
         }
 
@@ -126,11 +137,11 @@ namespace SerialConnectorForms
         {
             if(chBoxRts.Checked)
             {
-                serialPort1.RtsEnable = true;
+                serialPortPublic.RtsEnable = true;
             }
             else
             {
-                serialPort1.RtsEnable = false;
+                serialPortPublic.RtsEnable = false;
             }
         }
 
@@ -138,11 +149,11 @@ namespace SerialConnectorForms
         {
             if(chBoxXonXoff.Checked)
             {
-                serialPort1.Handshake = Handshake.RequestToSendXOnXOff;
+                serialPortPublic.Handshake = Handshake.RequestToSendXOnXOff;
             }
             else
             {
-                serialPort1.Handshake = Handshake.None;
+                serialPortPublic.Handshake = Handshake.None;
             }
         }
 
@@ -181,7 +192,7 @@ namespace SerialConnectorForms
 
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-            dataIN = serialPort1.ReadExisting();
+            dataIN = serialPortPublic.ReadExisting();
             this.Invoke(new EventHandler(ShowData));
         }
 
