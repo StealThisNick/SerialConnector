@@ -41,7 +41,6 @@ namespace SerialConnectorForms
 
             sendWith = "New Line";
 
-            toolStripReciverShowDataComboBox.Text = "Add to Old Data";
             toolStripTransmiterEndLineComboBox.Text = "New Line";
         }
 
@@ -161,14 +160,7 @@ namespace SerialConnectorForms
 
         private void ShowData(object sender, EventArgs e)
         {
-            if (toolStripReciverShowDataComboBox.Text == "Always Update")
-            {
-                tBoxDataIn.Text = dataIN;
-            }
-            else if (toolStripReciverShowDataComboBox.Text == "Add to Old Data")
-            {
-                tBoxDataIn.Text += dataIN + "\r\n";
-            }
+            tBoxDataIn.Text += dataIN + "\r\n";
         }
 
         private void clearReciverToolStripMenu_Click(object sender, EventArgs e)

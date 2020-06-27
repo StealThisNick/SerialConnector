@@ -61,8 +61,6 @@
             this.toolStripTransmiterEndLineComboBox = new System.Windows.Forms.ToolStripComboBox();
             this.reciverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearReciverToolStripMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.showDataReciverToolStripMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripReciverShowDataComboBox = new System.Windows.Forms.ToolStripComboBox();
             this.jogOperatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.oPENToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
@@ -380,8 +378,7 @@
             // reciverToolStripMenuItem
             // 
             this.reciverToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.clearReciverToolStripMenu,
-            this.showDataReciverToolStripMenu});
+            this.clearReciverToolStripMenu});
             this.reciverToolStripMenuItem.Name = "reciverToolStripMenuItem";
             this.reciverToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.reciverToolStripMenuItem.Text = "Reciver";
@@ -392,24 +389,6 @@
             this.clearReciverToolStripMenu.Size = new System.Drawing.Size(168, 22);
             this.clearReciverToolStripMenu.Text = "Clear";
             this.clearReciverToolStripMenu.Click += new System.EventHandler(this.clearReciverToolStripMenu_Click);
-            // 
-            // showDataReciverToolStripMenu
-            // 
-            this.showDataReciverToolStripMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripReciverShowDataComboBox});
-            this.showDataReciverToolStripMenu.Name = "showDataReciverToolStripMenu";
-            this.showDataReciverToolStripMenu.Size = new System.Drawing.Size(168, 22);
-            this.showDataReciverToolStripMenu.Text = "Show Data With";
-            // 
-            // toolStripReciverShowDataComboBox
-            // 
-            this.toolStripReciverShowDataComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.toolStripReciverShowDataComboBox.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.toolStripReciverShowDataComboBox.Items.AddRange(new object[] {
-            "Always Update",
-            "Add to Old Data"});
-            this.toolStripReciverShowDataComboBox.Name = "toolStripReciverShowDataComboBox";
-            this.toolStripReciverShowDataComboBox.Size = new System.Drawing.Size(121, 23);
             // 
             // jogOperatorToolStripMenuItem
             // 
@@ -490,8 +469,6 @@
         private System.Windows.Forms.ToolStripMenuItem endLineTransmiterToolStripMenu;
         private System.Windows.Forms.ToolStripComboBox toolStripTransmiterEndLineComboBox;
         private System.Windows.Forms.ToolStripMenuItem clearReciverToolStripMenu;
-        private System.Windows.Forms.ToolStripMenuItem showDataReciverToolStripMenu;
-        private System.Windows.Forms.ToolStripComboBox toolStripReciverShowDataComboBox;
         private System.Windows.Forms.GroupBox groupBox12;
         private System.Windows.Forms.ToolStripMenuItem clearTransmiterToolStripMenu;
         private System.Windows.Forms.ToolStripMenuItem oPENComToolStripMenu;
