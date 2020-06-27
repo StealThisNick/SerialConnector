@@ -329,6 +329,17 @@ namespace SerialConnectorForms
             //_serialPort.Write("MP " + (xyzCor) + ",0,0,0,0,0" + ",B" + "\r");
         }
 
-        
+        private void btnSetXYZ_Click_1(object sender, EventArgs e)
+        {
+            setterXYZ newsetterXYZ = new setterXYZ();
+            newsetterXYZ.Show();
+        }
+
+        private void btnSaveCurrentPosition_Click(object sender, EventArgs e)
+        {
+            int positionNumberToSave = Convert.ToInt32(nBoxPositionNumberToSave.Value);
+
+            _serialPort.Write("HE " + positionNumberToSave + "\r");
+        }
     }
 }

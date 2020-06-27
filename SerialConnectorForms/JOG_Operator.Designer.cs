@@ -29,37 +29,7 @@
         private void InitializeComponent()
         {
             this.gBoxJOG = new System.Windows.Forms.GroupBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.tBoxJogSpeed = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.tBoxRotationalJoint = new System.Windows.Forms.TextBox();
-            this.btnOpenHand = new System.Windows.Forms.Button();
-            this.btnCloseHand = new System.Windows.Forms.Button();
-            this.btnShoulderRight = new System.Windows.Forms.Button();
-            this.btnShoulderLeft = new System.Windows.Forms.Button();
-            this.btnRollRight = new System.Windows.Forms.Button();
-            this.btnRollLeft = new System.Windows.Forms.Button();
-            this.btnElbowRight = new System.Windows.Forms.Button();
-            this.btnElbowLeft = new System.Windows.Forms.Button();
-            this.btnTwistRight = new System.Windows.Forms.Button();
-            this.btnTwistLeft = new System.Windows.Forms.Button();
-            this.btnPitchRight = new System.Windows.Forms.Button();
-            this.btnPitchLeft = new System.Windows.Forms.Button();
-            this.btnWaistRigth = new System.Windows.Forms.Button();
-            this.btnWaistLeft = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.jogJOINT = new System.Windows.Forms.GroupBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.tBoxABCCor = new System.Windows.Forms.TextBox();
+            this.jogXYZ = new System.Windows.Forms.GroupBox();
             this.gBoxXYZJoints = new System.Windows.Forms.GroupBox();
             this.btnZUp = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
@@ -79,28 +49,67 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.tBoxXYZCor = new System.Windows.Forms.TextBox();
+            this.tBoxABCCor = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label16 = new System.Windows.Forms.Label();
             this.tBoxXYZSpeed = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.tBoxXYZCor = new System.Windows.Forms.TextBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.jogXYZ = new System.Windows.Forms.GroupBox();
-            this.rBtnJointJog = new System.Windows.Forms.RadioButton();
             this.rBtnXyzJog = new System.Windows.Forms.RadioButton();
+            this.rBtnJointJog = new System.Windows.Forms.RadioButton();
+            this.jogJOINT = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.tBoxRotationalJoint = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.tBoxJogSpeed = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.btnWaistLeft = new System.Windows.Forms.Button();
+            this.btnWaistRigth = new System.Windows.Forms.Button();
+            this.btnPitchLeft = new System.Windows.Forms.Button();
+            this.btnShoulderRight = new System.Windows.Forms.Button();
+            this.btnPitchRight = new System.Windows.Forms.Button();
+            this.btnShoulderLeft = new System.Windows.Forms.Button();
+            this.btnTwistLeft = new System.Windows.Forms.Button();
+            this.btnRollRight = new System.Windows.Forms.Button();
+            this.btnTwistRight = new System.Windows.Forms.Button();
+            this.btnRollLeft = new System.Windows.Forms.Button();
+            this.btnElbowLeft = new System.Windows.Forms.Button();
+            this.btnElbowRight = new System.Windows.Forms.Button();
+            this.btnOpenHand = new System.Windows.Forms.Button();
+            this.btnCloseHand = new System.Windows.Forms.Button();
+            this.btnSetXYZ = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.nBoxPositionNumberToSave = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnSaveCurrentPosition = new System.Windows.Forms.Button();
             this.gBoxJOG.SuspendLayout();
-            this.jogJOINT.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.gBoxXYZJoints.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
             this.jogXYZ.SuspendLayout();
+            this.gBoxXYZJoints.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.jogJOINT.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nBoxPositionNumberToSave)).BeginInit();
             this.SuspendLayout();
             // 
             // gBoxJOG
             // 
+            this.gBoxJOG.Controls.Add(this.groupBox3);
+            this.gBoxJOG.Controls.Add(this.btnSetXYZ);
             this.gBoxJOG.Controls.Add(this.jogXYZ);
             this.gBoxJOG.Controls.Add(this.rBtnXyzJog);
             this.gBoxJOG.Controls.Add(this.rBtnJointJog);
@@ -114,319 +123,16 @@
             this.gBoxJOG.TabStop = false;
             this.gBoxJOG.Text = "JOG Operator";
             // 
-            // label15
+            // jogXYZ
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(6, 16);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(38, 13);
-            this.label15.TabIndex = 24;
-            this.label15.Text = "Speed";
-            // 
-            // tBoxJogSpeed
-            // 
-            this.tBoxJogSpeed.Location = new System.Drawing.Point(67, 13);
-            this.tBoxJogSpeed.Name = "tBoxJogSpeed";
-            this.tBoxJogSpeed.Size = new System.Drawing.Size(50, 20);
-            this.tBoxJogSpeed.TabIndex = 23;
-            this.tBoxJogSpeed.Text = "5";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(123, 17);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(27, 13);
-            this.label14.TabIndex = 22;
-            this.label14.Text = "Deg";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(6, 17);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(55, 13);
-            this.label13.TabIndex = 21;
-            this.label13.Text = "Rotational";
-            // 
-            // tBoxRotationalJoint
-            // 
-            this.tBoxRotationalJoint.Location = new System.Drawing.Point(67, 14);
-            this.tBoxRotationalJoint.Name = "tBoxRotationalJoint";
-            this.tBoxRotationalJoint.Size = new System.Drawing.Size(50, 20);
-            this.tBoxRotationalJoint.TabIndex = 20;
-            this.tBoxRotationalJoint.Text = "5";
-            // 
-            // btnOpenHand
-            // 
-            this.btnOpenHand.Location = new System.Drawing.Point(255, 54);
-            this.btnOpenHand.Name = "btnOpenHand";
-            this.btnOpenHand.Size = new System.Drawing.Size(117, 23);
-            this.btnOpenHand.TabIndex = 19;
-            this.btnOpenHand.Text = "Open Hand";
-            this.btnOpenHand.UseVisualStyleBackColor = true;
-            this.btnOpenHand.Click += new System.EventHandler(this.btnOpenHand_Click);
-            // 
-            // btnCloseHand
-            // 
-            this.btnCloseHand.Location = new System.Drawing.Point(255, 25);
-            this.btnCloseHand.Name = "btnCloseHand";
-            this.btnCloseHand.Size = new System.Drawing.Size(117, 23);
-            this.btnCloseHand.TabIndex = 18;
-            this.btnCloseHand.Text = "Close Hand";
-            this.btnCloseHand.UseVisualStyleBackColor = true;
-            this.btnCloseHand.Click += new System.EventHandler(this.btnCloseHand_Click);
-            // 
-            // btnShoulderRight
-            // 
-            this.btnShoulderRight.Location = new System.Drawing.Point(136, 41);
-            this.btnShoulderRight.Name = "btnShoulderRight";
-            this.btnShoulderRight.Size = new System.Drawing.Size(26, 23);
-            this.btnShoulderRight.TabIndex = 17;
-            this.btnShoulderRight.Text = ">";
-            this.btnShoulderRight.UseVisualStyleBackColor = true;
-            this.btnShoulderRight.Click += new System.EventHandler(this.btnShoulderRight_Click);
-            // 
-            // btnShoulderLeft
-            // 
-            this.btnShoulderLeft.Location = new System.Drawing.Point(104, 41);
-            this.btnShoulderLeft.Name = "btnShoulderLeft";
-            this.btnShoulderLeft.Size = new System.Drawing.Size(26, 23);
-            this.btnShoulderLeft.TabIndex = 16;
-            this.btnShoulderLeft.Text = "<";
-            this.btnShoulderLeft.UseVisualStyleBackColor = true;
-            this.btnShoulderLeft.Click += new System.EventHandler(this.btnShoulderLeft_Click);
-            // 
-            // btnRollRight
-            // 
-            this.btnRollRight.Location = new System.Drawing.Point(136, 154);
-            this.btnRollRight.Name = "btnRollRight";
-            this.btnRollRight.Size = new System.Drawing.Size(26, 23);
-            this.btnRollRight.TabIndex = 15;
-            this.btnRollRight.Text = ">";
-            this.btnRollRight.UseVisualStyleBackColor = true;
-            this.btnRollRight.Click += new System.EventHandler(this.btnRollRight_Click);
-            // 
-            // btnRollLeft
-            // 
-            this.btnRollLeft.Location = new System.Drawing.Point(104, 154);
-            this.btnRollLeft.Name = "btnRollLeft";
-            this.btnRollLeft.Size = new System.Drawing.Size(26, 23);
-            this.btnRollLeft.TabIndex = 14;
-            this.btnRollLeft.Text = "<";
-            this.btnRollLeft.UseVisualStyleBackColor = true;
-            this.btnRollLeft.Click += new System.EventHandler(this.btnRollLeft_Click);
-            // 
-            // btnElbowRight
-            // 
-            this.btnElbowRight.Location = new System.Drawing.Point(136, 68);
-            this.btnElbowRight.Name = "btnElbowRight";
-            this.btnElbowRight.Size = new System.Drawing.Size(26, 23);
-            this.btnElbowRight.TabIndex = 13;
-            this.btnElbowRight.Text = ">";
-            this.btnElbowRight.UseVisualStyleBackColor = true;
-            this.btnElbowRight.Click += new System.EventHandler(this.btnElbowRight_Click);
-            // 
-            // btnElbowLeft
-            // 
-            this.btnElbowLeft.Location = new System.Drawing.Point(104, 68);
-            this.btnElbowLeft.Name = "btnElbowLeft";
-            this.btnElbowLeft.Size = new System.Drawing.Size(26, 23);
-            this.btnElbowLeft.TabIndex = 12;
-            this.btnElbowLeft.Text = "<";
-            this.btnElbowLeft.UseVisualStyleBackColor = true;
-            this.btnElbowLeft.Click += new System.EventHandler(this.btnElbowLeft_Click);
-            // 
-            // btnTwistRight
-            // 
-            this.btnTwistRight.Location = new System.Drawing.Point(136, 96);
-            this.btnTwistRight.Name = "btnTwistRight";
-            this.btnTwistRight.Size = new System.Drawing.Size(26, 23);
-            this.btnTwistRight.TabIndex = 11;
-            this.btnTwistRight.Text = ">";
-            this.btnTwistRight.UseVisualStyleBackColor = true;
-            this.btnTwistRight.Click += new System.EventHandler(this.btnTwistRight_Click);
-            // 
-            // btnTwistLeft
-            // 
-            this.btnTwistLeft.Location = new System.Drawing.Point(104, 96);
-            this.btnTwistLeft.Name = "btnTwistLeft";
-            this.btnTwistLeft.Size = new System.Drawing.Size(26, 23);
-            this.btnTwistLeft.TabIndex = 10;
-            this.btnTwistLeft.Text = "<";
-            this.btnTwistLeft.UseVisualStyleBackColor = true;
-            this.btnTwistLeft.Click += new System.EventHandler(this.btnTwistLeft_Click);
-            // 
-            // btnPitchRight
-            // 
-            this.btnPitchRight.Location = new System.Drawing.Point(136, 125);
-            this.btnPitchRight.Name = "btnPitchRight";
-            this.btnPitchRight.Size = new System.Drawing.Size(26, 23);
-            this.btnPitchRight.TabIndex = 9;
-            this.btnPitchRight.Text = ">";
-            this.btnPitchRight.UseVisualStyleBackColor = true;
-            this.btnPitchRight.Click += new System.EventHandler(this.btnPitchRight_Click);
-            // 
-            // btnPitchLeft
-            // 
-            this.btnPitchLeft.Location = new System.Drawing.Point(104, 125);
-            this.btnPitchLeft.Name = "btnPitchLeft";
-            this.btnPitchLeft.Size = new System.Drawing.Size(26, 23);
-            this.btnPitchLeft.TabIndex = 8;
-            this.btnPitchLeft.Text = "<";
-            this.btnPitchLeft.UseVisualStyleBackColor = true;
-            this.btnPitchLeft.Click += new System.EventHandler(this.btnPitchLeft_Click);
-            // 
-            // btnWaistRigth
-            // 
-            this.btnWaistRigth.Location = new System.Drawing.Point(136, 11);
-            this.btnWaistRigth.Name = "btnWaistRigth";
-            this.btnWaistRigth.Size = new System.Drawing.Size(26, 23);
-            this.btnWaistRigth.TabIndex = 7;
-            this.btnWaistRigth.Text = ">";
-            this.btnWaistRigth.UseVisualStyleBackColor = true;
-            this.btnWaistRigth.Click += new System.EventHandler(this.btnWaistRigth_Click);
-            // 
-            // btnWaistLeft
-            // 
-            this.btnWaistLeft.Location = new System.Drawing.Point(104, 11);
-            this.btnWaistLeft.Name = "btnWaistLeft";
-            this.btnWaistLeft.Size = new System.Drawing.Size(26, 23);
-            this.btnWaistLeft.TabIndex = 6;
-            this.btnWaistLeft.Text = "<";
-            this.btnWaistLeft.UseVisualStyleBackColor = true;
-            this.btnWaistLeft.Click += new System.EventHandler(this.btnWaistLeft_Click);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(50, 159);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(25, 13);
-            this.label12.TabIndex = 5;
-            this.label12.Text = "Roll";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(50, 130);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(31, 13);
-            this.label11.TabIndex = 4;
-            this.label11.Text = "Pitch";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(49, 101);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(32, 13);
-            this.label10.TabIndex = 3;
-            this.label10.Text = "Twist";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(49, 73);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(36, 13);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "Elbow";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(49, 46);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(49, 13);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Shoulder";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(49, 16);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(34, 13);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Waist";
-            // 
-            // jogJOINT
-            // 
-            this.jogJOINT.Controls.Add(this.groupBox2);
-            this.jogJOINT.Controls.Add(this.groupBox1);
-            this.jogJOINT.Controls.Add(this.label7);
-            this.jogJOINT.Controls.Add(this.label8);
-            this.jogJOINT.Controls.Add(this.label9);
-            this.jogJOINT.Controls.Add(this.label10);
-            this.jogJOINT.Controls.Add(this.label11);
-            this.jogJOINT.Controls.Add(this.label12);
-            this.jogJOINT.Controls.Add(this.btnWaistLeft);
-            this.jogJOINT.Controls.Add(this.btnWaistRigth);
-            this.jogJOINT.Controls.Add(this.btnPitchLeft);
-            this.jogJOINT.Controls.Add(this.btnShoulderRight);
-            this.jogJOINT.Controls.Add(this.btnPitchRight);
-            this.jogJOINT.Controls.Add(this.btnShoulderLeft);
-            this.jogJOINT.Controls.Add(this.btnTwistLeft);
-            this.jogJOINT.Controls.Add(this.btnRollRight);
-            this.jogJOINT.Controls.Add(this.btnTwistRight);
-            this.jogJOINT.Controls.Add(this.btnRollLeft);
-            this.jogJOINT.Controls.Add(this.btnElbowLeft);
-            this.jogJOINT.Controls.Add(this.btnElbowRight);
-            this.jogJOINT.Location = new System.Drawing.Point(6, 19);
-            this.jogJOINT.Name = "jogJOINT";
-            this.jogJOINT.Size = new System.Drawing.Size(243, 319);
-            this.jogJOINT.TabIndex = 11;
-            this.jogJOINT.TabStop = false;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.tBoxJogSpeed);
-            this.groupBox1.Location = new System.Drawing.Point(30, 183);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(160, 46);
-            this.groupBox1.TabIndex = 11;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Jog Speed";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.tBoxRotationalJoint);
-            this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Location = new System.Drawing.Point(30, 236);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(160, 46);
-            this.groupBox2.TabIndex = 12;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Jog Increment";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(123, 43);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(27, 13);
-            this.label25.TabIndex = 29;
-            this.label25.Text = "Deg";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(6, 43);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(28, 13);
-            this.label26.TabIndex = 28;
-            this.label26.Text = "ABC";
-            // 
-            // tBoxABCCor
-            // 
-            this.tBoxABCCor.Location = new System.Drawing.Point(67, 40);
-            this.tBoxABCCor.Name = "tBoxABCCor";
-            this.tBoxABCCor.Size = new System.Drawing.Size(50, 20);
-            this.tBoxABCCor.TabIndex = 27;
-            this.tBoxABCCor.Text = "5";
+            this.jogXYZ.Controls.Add(this.gBoxXYZJoints);
+            this.jogXYZ.Controls.Add(this.groupBox5);
+            this.jogXYZ.Controls.Add(this.groupBox4);
+            this.jogXYZ.Location = new System.Drawing.Point(6, 19);
+            this.jogXYZ.Name = "jogXYZ";
+            this.jogXYZ.Size = new System.Drawing.Size(243, 312);
+            this.jogXYZ.TabIndex = 14;
+            this.jogXYZ.TabStop = false;
             // 
             // gBoxXYZJoints
             // 
@@ -641,6 +347,84 @@
             this.label19.TabIndex = 0;
             this.label19.Text = "C";
             // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.label25);
+            this.groupBox5.Controls.Add(this.label18);
+            this.groupBox5.Controls.Add(this.label26);
+            this.groupBox5.Controls.Add(this.tBoxXYZCor);
+            this.groupBox5.Controls.Add(this.tBoxABCCor);
+            this.groupBox5.Controls.Add(this.label17);
+            this.groupBox5.Location = new System.Drawing.Point(30, 230);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(160, 71);
+            this.groupBox5.TabIndex = 13;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Jog Increment";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(123, 43);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(27, 13);
+            this.label25.TabIndex = 29;
+            this.label25.Text = "Deg";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(6, 16);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(28, 13);
+            this.label18.TabIndex = 21;
+            this.label18.Text = "XYZ";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(6, 43);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(28, 13);
+            this.label26.TabIndex = 28;
+            this.label26.Text = "ABC";
+            // 
+            // tBoxXYZCor
+            // 
+            this.tBoxXYZCor.Location = new System.Drawing.Point(67, 13);
+            this.tBoxXYZCor.Name = "tBoxXYZCor";
+            this.tBoxXYZCor.Size = new System.Drawing.Size(50, 20);
+            this.tBoxXYZCor.TabIndex = 20;
+            this.tBoxXYZCor.Text = "25";
+            // 
+            // tBoxABCCor
+            // 
+            this.tBoxABCCor.Location = new System.Drawing.Point(67, 40);
+            this.tBoxABCCor.Name = "tBoxABCCor";
+            this.tBoxABCCor.Size = new System.Drawing.Size(50, 20);
+            this.tBoxABCCor.TabIndex = 27;
+            this.tBoxABCCor.Text = "5";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(123, 16);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(23, 13);
+            this.label17.TabIndex = 22;
+            this.label17.Text = "mm";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label16);
+            this.groupBox4.Controls.Add(this.tBoxXYZSpeed);
+            this.groupBox4.Location = new System.Drawing.Point(30, 178);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(160, 46);
+            this.groupBox4.TabIndex = 12;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Jog Speed";
+            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -658,68 +442,17 @@
             this.tBoxXYZSpeed.TabIndex = 23;
             this.tBoxXYZSpeed.Text = "5";
             // 
-            // label17
+            // rBtnXyzJog
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(123, 16);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(23, 13);
-            this.label17.TabIndex = 22;
-            this.label17.Text = "mm";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(6, 16);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(28, 13);
-            this.label18.TabIndex = 21;
-            this.label18.Text = "XYZ";
-            // 
-            // tBoxXYZCor
-            // 
-            this.tBoxXYZCor.Location = new System.Drawing.Point(67, 13);
-            this.tBoxXYZCor.Name = "tBoxXYZCor";
-            this.tBoxXYZCor.Size = new System.Drawing.Size(50, 20);
-            this.tBoxXYZCor.TabIndex = 20;
-            this.tBoxXYZCor.Text = "25";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.label16);
-            this.groupBox4.Controls.Add(this.tBoxXYZSpeed);
-            this.groupBox4.Location = new System.Drawing.Point(30, 178);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(160, 46);
-            this.groupBox4.TabIndex = 12;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Jog Speed";
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.label25);
-            this.groupBox5.Controls.Add(this.label18);
-            this.groupBox5.Controls.Add(this.label26);
-            this.groupBox5.Controls.Add(this.tBoxXYZCor);
-            this.groupBox5.Controls.Add(this.tBoxABCCor);
-            this.groupBox5.Controls.Add(this.label17);
-            this.groupBox5.Location = new System.Drawing.Point(30, 230);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(160, 71);
-            this.groupBox5.TabIndex = 13;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Jog Increment";
-            // 
-            // jogXYZ
-            // 
-            this.jogXYZ.Controls.Add(this.gBoxXYZJoints);
-            this.jogXYZ.Controls.Add(this.groupBox5);
-            this.jogXYZ.Controls.Add(this.groupBox4);
-            this.jogXYZ.Location = new System.Drawing.Point(6, 19);
-            this.jogXYZ.Name = "jogXYZ";
-            this.jogXYZ.Size = new System.Drawing.Size(243, 312);
-            this.jogXYZ.TabIndex = 14;
-            this.jogXYZ.TabStop = false;
+            this.rBtnXyzJog.AutoSize = true;
+            this.rBtnXyzJog.Location = new System.Drawing.Point(255, 110);
+            this.rBtnXyzJog.Name = "rBtnXyzJog";
+            this.rBtnXyzJog.Size = new System.Drawing.Size(66, 17);
+            this.rBtnXyzJog.TabIndex = 21;
+            this.rBtnXyzJog.TabStop = true;
+            this.rBtnXyzJog.Text = "XYZ Jog";
+            this.rBtnXyzJog.UseVisualStyleBackColor = true;
+            this.rBtnXyzJog.CheckedChanged += new System.EventHandler(this.rBtnXyzJog_CheckedChanged);
             // 
             // rBtnJointJog
             // 
@@ -733,17 +466,357 @@
             this.rBtnJointJog.UseVisualStyleBackColor = true;
             this.rBtnJointJog.CheckedChanged += new System.EventHandler(this.rBtnJointJog_CheckedChanged);
             // 
-            // rBtnXyzJog
+            // jogJOINT
             // 
-            this.rBtnXyzJog.AutoSize = true;
-            this.rBtnXyzJog.Location = new System.Drawing.Point(255, 110);
-            this.rBtnXyzJog.Name = "rBtnXyzJog";
-            this.rBtnXyzJog.Size = new System.Drawing.Size(66, 17);
-            this.rBtnXyzJog.TabIndex = 21;
-            this.rBtnXyzJog.TabStop = true;
-            this.rBtnXyzJog.Text = "XYZ Jog";
-            this.rBtnXyzJog.UseVisualStyleBackColor = true;
-            this.rBtnXyzJog.CheckedChanged += new System.EventHandler(this.rBtnXyzJog_CheckedChanged);
+            this.jogJOINT.Controls.Add(this.groupBox2);
+            this.jogJOINT.Controls.Add(this.groupBox1);
+            this.jogJOINT.Controls.Add(this.label7);
+            this.jogJOINT.Controls.Add(this.label8);
+            this.jogJOINT.Controls.Add(this.label9);
+            this.jogJOINT.Controls.Add(this.label10);
+            this.jogJOINT.Controls.Add(this.label11);
+            this.jogJOINT.Controls.Add(this.label12);
+            this.jogJOINT.Controls.Add(this.btnWaistLeft);
+            this.jogJOINT.Controls.Add(this.btnWaistRigth);
+            this.jogJOINT.Controls.Add(this.btnPitchLeft);
+            this.jogJOINT.Controls.Add(this.btnShoulderRight);
+            this.jogJOINT.Controls.Add(this.btnPitchRight);
+            this.jogJOINT.Controls.Add(this.btnShoulderLeft);
+            this.jogJOINT.Controls.Add(this.btnTwistLeft);
+            this.jogJOINT.Controls.Add(this.btnRollRight);
+            this.jogJOINT.Controls.Add(this.btnTwistRight);
+            this.jogJOINT.Controls.Add(this.btnRollLeft);
+            this.jogJOINT.Controls.Add(this.btnElbowLeft);
+            this.jogJOINT.Controls.Add(this.btnElbowRight);
+            this.jogJOINT.Location = new System.Drawing.Point(6, 19);
+            this.jogJOINT.Name = "jogJOINT";
+            this.jogJOINT.Size = new System.Drawing.Size(243, 319);
+            this.jogJOINT.TabIndex = 11;
+            this.jogJOINT.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Controls.Add(this.tBoxRotationalJoint);
+            this.groupBox2.Controls.Add(this.label14);
+            this.groupBox2.Location = new System.Drawing.Point(30, 236);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(160, 46);
+            this.groupBox2.TabIndex = 12;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Jog Increment";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(6, 17);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(55, 13);
+            this.label13.TabIndex = 21;
+            this.label13.Text = "Rotational";
+            // 
+            // tBoxRotationalJoint
+            // 
+            this.tBoxRotationalJoint.Location = new System.Drawing.Point(67, 14);
+            this.tBoxRotationalJoint.Name = "tBoxRotationalJoint";
+            this.tBoxRotationalJoint.Size = new System.Drawing.Size(50, 20);
+            this.tBoxRotationalJoint.TabIndex = 20;
+            this.tBoxRotationalJoint.Text = "5";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(123, 17);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(27, 13);
+            this.label14.TabIndex = 22;
+            this.label14.Text = "Deg";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label15);
+            this.groupBox1.Controls.Add(this.tBoxJogSpeed);
+            this.groupBox1.Location = new System.Drawing.Point(30, 183);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(160, 46);
+            this.groupBox1.TabIndex = 11;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Jog Speed";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(6, 16);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(38, 13);
+            this.label15.TabIndex = 24;
+            this.label15.Text = "Speed";
+            // 
+            // tBoxJogSpeed
+            // 
+            this.tBoxJogSpeed.Location = new System.Drawing.Point(67, 13);
+            this.tBoxJogSpeed.Name = "tBoxJogSpeed";
+            this.tBoxJogSpeed.Size = new System.Drawing.Size(50, 20);
+            this.tBoxJogSpeed.TabIndex = 23;
+            this.tBoxJogSpeed.Text = "5";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(49, 16);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(34, 13);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Waist";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(49, 46);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(49, 13);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Shoulder";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(49, 73);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(36, 13);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Elbow";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(49, 101);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(32, 13);
+            this.label10.TabIndex = 3;
+            this.label10.Text = "Twist";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(50, 130);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(31, 13);
+            this.label11.TabIndex = 4;
+            this.label11.Text = "Pitch";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(50, 159);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(25, 13);
+            this.label12.TabIndex = 5;
+            this.label12.Text = "Roll";
+            // 
+            // btnWaistLeft
+            // 
+            this.btnWaistLeft.Location = new System.Drawing.Point(104, 11);
+            this.btnWaistLeft.Name = "btnWaistLeft";
+            this.btnWaistLeft.Size = new System.Drawing.Size(26, 23);
+            this.btnWaistLeft.TabIndex = 6;
+            this.btnWaistLeft.Text = "<";
+            this.btnWaistLeft.UseVisualStyleBackColor = true;
+            this.btnWaistLeft.Click += new System.EventHandler(this.btnWaistLeft_Click);
+            // 
+            // btnWaistRigth
+            // 
+            this.btnWaistRigth.Location = new System.Drawing.Point(136, 11);
+            this.btnWaistRigth.Name = "btnWaistRigth";
+            this.btnWaistRigth.Size = new System.Drawing.Size(26, 23);
+            this.btnWaistRigth.TabIndex = 7;
+            this.btnWaistRigth.Text = ">";
+            this.btnWaistRigth.UseVisualStyleBackColor = true;
+            this.btnWaistRigth.Click += new System.EventHandler(this.btnWaistRigth_Click);
+            // 
+            // btnPitchLeft
+            // 
+            this.btnPitchLeft.Location = new System.Drawing.Point(104, 125);
+            this.btnPitchLeft.Name = "btnPitchLeft";
+            this.btnPitchLeft.Size = new System.Drawing.Size(26, 23);
+            this.btnPitchLeft.TabIndex = 8;
+            this.btnPitchLeft.Text = "<";
+            this.btnPitchLeft.UseVisualStyleBackColor = true;
+            this.btnPitchLeft.Click += new System.EventHandler(this.btnPitchLeft_Click);
+            // 
+            // btnShoulderRight
+            // 
+            this.btnShoulderRight.Location = new System.Drawing.Point(136, 41);
+            this.btnShoulderRight.Name = "btnShoulderRight";
+            this.btnShoulderRight.Size = new System.Drawing.Size(26, 23);
+            this.btnShoulderRight.TabIndex = 17;
+            this.btnShoulderRight.Text = ">";
+            this.btnShoulderRight.UseVisualStyleBackColor = true;
+            this.btnShoulderRight.Click += new System.EventHandler(this.btnShoulderRight_Click);
+            // 
+            // btnPitchRight
+            // 
+            this.btnPitchRight.Location = new System.Drawing.Point(136, 125);
+            this.btnPitchRight.Name = "btnPitchRight";
+            this.btnPitchRight.Size = new System.Drawing.Size(26, 23);
+            this.btnPitchRight.TabIndex = 9;
+            this.btnPitchRight.Text = ">";
+            this.btnPitchRight.UseVisualStyleBackColor = true;
+            this.btnPitchRight.Click += new System.EventHandler(this.btnPitchRight_Click);
+            // 
+            // btnShoulderLeft
+            // 
+            this.btnShoulderLeft.Location = new System.Drawing.Point(104, 41);
+            this.btnShoulderLeft.Name = "btnShoulderLeft";
+            this.btnShoulderLeft.Size = new System.Drawing.Size(26, 23);
+            this.btnShoulderLeft.TabIndex = 16;
+            this.btnShoulderLeft.Text = "<";
+            this.btnShoulderLeft.UseVisualStyleBackColor = true;
+            this.btnShoulderLeft.Click += new System.EventHandler(this.btnShoulderLeft_Click);
+            // 
+            // btnTwistLeft
+            // 
+            this.btnTwistLeft.Location = new System.Drawing.Point(104, 96);
+            this.btnTwistLeft.Name = "btnTwistLeft";
+            this.btnTwistLeft.Size = new System.Drawing.Size(26, 23);
+            this.btnTwistLeft.TabIndex = 10;
+            this.btnTwistLeft.Text = "<";
+            this.btnTwistLeft.UseVisualStyleBackColor = true;
+            this.btnTwistLeft.Click += new System.EventHandler(this.btnTwistLeft_Click);
+            // 
+            // btnRollRight
+            // 
+            this.btnRollRight.Location = new System.Drawing.Point(136, 154);
+            this.btnRollRight.Name = "btnRollRight";
+            this.btnRollRight.Size = new System.Drawing.Size(26, 23);
+            this.btnRollRight.TabIndex = 15;
+            this.btnRollRight.Text = ">";
+            this.btnRollRight.UseVisualStyleBackColor = true;
+            this.btnRollRight.Click += new System.EventHandler(this.btnRollRight_Click);
+            // 
+            // btnTwistRight
+            // 
+            this.btnTwistRight.Location = new System.Drawing.Point(136, 96);
+            this.btnTwistRight.Name = "btnTwistRight";
+            this.btnTwistRight.Size = new System.Drawing.Size(26, 23);
+            this.btnTwistRight.TabIndex = 11;
+            this.btnTwistRight.Text = ">";
+            this.btnTwistRight.UseVisualStyleBackColor = true;
+            this.btnTwistRight.Click += new System.EventHandler(this.btnTwistRight_Click);
+            // 
+            // btnRollLeft
+            // 
+            this.btnRollLeft.Location = new System.Drawing.Point(104, 154);
+            this.btnRollLeft.Name = "btnRollLeft";
+            this.btnRollLeft.Size = new System.Drawing.Size(26, 23);
+            this.btnRollLeft.TabIndex = 14;
+            this.btnRollLeft.Text = "<";
+            this.btnRollLeft.UseVisualStyleBackColor = true;
+            this.btnRollLeft.Click += new System.EventHandler(this.btnRollLeft_Click);
+            // 
+            // btnElbowLeft
+            // 
+            this.btnElbowLeft.Location = new System.Drawing.Point(104, 68);
+            this.btnElbowLeft.Name = "btnElbowLeft";
+            this.btnElbowLeft.Size = new System.Drawing.Size(26, 23);
+            this.btnElbowLeft.TabIndex = 12;
+            this.btnElbowLeft.Text = "<";
+            this.btnElbowLeft.UseVisualStyleBackColor = true;
+            this.btnElbowLeft.Click += new System.EventHandler(this.btnElbowLeft_Click);
+            // 
+            // btnElbowRight
+            // 
+            this.btnElbowRight.Location = new System.Drawing.Point(136, 68);
+            this.btnElbowRight.Name = "btnElbowRight";
+            this.btnElbowRight.Size = new System.Drawing.Size(26, 23);
+            this.btnElbowRight.TabIndex = 13;
+            this.btnElbowRight.Text = ">";
+            this.btnElbowRight.UseVisualStyleBackColor = true;
+            this.btnElbowRight.Click += new System.EventHandler(this.btnElbowRight_Click);
+            // 
+            // btnOpenHand
+            // 
+            this.btnOpenHand.Location = new System.Drawing.Point(255, 54);
+            this.btnOpenHand.Name = "btnOpenHand";
+            this.btnOpenHand.Size = new System.Drawing.Size(117, 23);
+            this.btnOpenHand.TabIndex = 19;
+            this.btnOpenHand.Text = "Open Hand";
+            this.btnOpenHand.UseVisualStyleBackColor = true;
+            this.btnOpenHand.Click += new System.EventHandler(this.btnOpenHand_Click);
+            // 
+            // btnCloseHand
+            // 
+            this.btnCloseHand.Location = new System.Drawing.Point(255, 25);
+            this.btnCloseHand.Name = "btnCloseHand";
+            this.btnCloseHand.Size = new System.Drawing.Size(117, 23);
+            this.btnCloseHand.TabIndex = 18;
+            this.btnCloseHand.Text = "Close Hand";
+            this.btnCloseHand.UseVisualStyleBackColor = true;
+            this.btnCloseHand.Click += new System.EventHandler(this.btnCloseHand_Click);
+            // 
+            // btnSetXYZ
+            // 
+            this.btnSetXYZ.Location = new System.Drawing.Point(255, 149);
+            this.btnSetXYZ.Name = "btnSetXYZ";
+            this.btnSetXYZ.Size = new System.Drawing.Size(117, 23);
+            this.btnSetXYZ.TabIndex = 22;
+            this.btnSetXYZ.Text = "Set XYZ Position";
+            this.btnSetXYZ.UseVisualStyleBackColor = true;
+            this.btnSetXYZ.Click += new System.EventHandler(this.btnSetXYZ_Click_1);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btnSaveCurrentPosition);
+            this.groupBox3.Controls.Add(this.label1);
+            this.groupBox3.Controls.Add(this.nBoxPositionNumberToSave);
+            this.groupBox3.Location = new System.Drawing.Point(252, 187);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(145, 91);
+            this.groupBox3.TabIndex = 23;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Position List";
+            // 
+            // nBoxPositionNumberToSave
+            // 
+            this.nBoxPositionNumberToSave.Location = new System.Drawing.Point(68, 19);
+            this.nBoxPositionNumberToSave.Maximum = new decimal(new int[] {
+            900,
+            0,
+            0,
+            0});
+            this.nBoxPositionNumberToSave.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nBoxPositionNumberToSave.Name = "nBoxPositionNumberToSave";
+            this.nBoxPositionNumberToSave.Size = new System.Drawing.Size(52, 20);
+            this.nBoxPositionNumberToSave.TabIndex = 0;
+            this.nBoxPositionNumberToSave.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.nBoxPositionNumberToSave.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Pos.-No.:";
+            // 
+            // btnSaveCurrentPosition
+            // 
+            this.btnSaveCurrentPosition.Location = new System.Drawing.Point(3, 46);
+            this.btnSaveCurrentPosition.Name = "btnSaveCurrentPosition";
+            this.btnSaveCurrentPosition.Size = new System.Drawing.Size(117, 39);
+            this.btnSaveCurrentPosition.TabIndex = 23;
+            this.btnSaveCurrentPosition.Text = "Current Position -> Pos. List";
+            this.btnSaveCurrentPosition.UseVisualStyleBackColor = true;
+            this.btnSaveCurrentPosition.Click += new System.EventHandler(this.btnSaveCurrentPosition_Click);
             // 
             // JOG_Operator
             // 
@@ -756,19 +829,22 @@
             this.Load += new System.EventHandler(this.JOG_Operator_Load);
             this.gBoxJOG.ResumeLayout(false);
             this.gBoxJOG.PerformLayout();
-            this.jogJOINT.ResumeLayout(false);
-            this.jogJOINT.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.jogXYZ.ResumeLayout(false);
             this.gBoxXYZJoints.ResumeLayout(false);
             this.gBoxXYZJoints.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            this.jogXYZ.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.jogJOINT.ResumeLayout(false);
+            this.jogJOINT.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nBoxPositionNumberToSave)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -836,5 +912,10 @@
         private System.Windows.Forms.GroupBox jogXYZ;
         private System.Windows.Forms.RadioButton rBtnXyzJog;
         private System.Windows.Forms.RadioButton rBtnJointJog;
+        private System.Windows.Forms.Button btnSetXYZ;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btnSaveCurrentPosition;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.NumericUpDown nBoxPositionNumberToSave;
     }
 }

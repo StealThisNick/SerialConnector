@@ -63,10 +63,9 @@
             this.clearReciverToolStripMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.showDataReciverToolStripMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripReciverShowDataComboBox = new System.Windows.Forms.ToolStripComboBox();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.btnSetXYZ = new System.Windows.Forms.Button();
             this.jogOperatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.oPENToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.groupBox12.SuspendLayout();
@@ -300,7 +299,7 @@
             this.jogOperatorToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(989, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(826, 24);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -412,6 +411,21 @@
             this.toolStripReciverShowDataComboBox.Name = "toolStripReciverShowDataComboBox";
             this.toolStripReciverShowDataComboBox.Size = new System.Drawing.Size(121, 23);
             // 
+            // jogOperatorToolStripMenuItem
+            // 
+            this.jogOperatorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.oPENToolStripMenuItem});
+            this.jogOperatorToolStripMenuItem.Name = "jogOperatorToolStripMenuItem";
+            this.jogOperatorToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
+            this.jogOperatorToolStripMenuItem.Text = "Jog Operator";
+            // 
+            // oPENToolStripMenuItem
+            // 
+            this.oPENToolStripMenuItem.Name = "oPENToolStripMenuItem";
+            this.oPENToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.oPENToolStripMenuItem.Text = "OPEN";
+            this.oPENToolStripMenuItem.Click += new System.EventHandler(this.oPENToolStripMenuItem_Click);
+            // 
             // groupBox12
             // 
             this.groupBox12.Controls.Add(this.tBoxDataOut);
@@ -424,38 +438,12 @@
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Monitor";
             // 
-            // btnSetXYZ
-            // 
-            this.btnSetXYZ.Location = new System.Drawing.Point(806, 46);
-            this.btnSetXYZ.Name = "btnSetXYZ";
-            this.btnSetXYZ.Size = new System.Drawing.Size(117, 23);
-            this.btnSetXYZ.TabIndex = 26;
-            this.btnSetXYZ.Text = "Set XYZ";
-            this.btnSetXYZ.UseVisualStyleBackColor = true;
-            this.btnSetXYZ.Click += new System.EventHandler(this.btnSetXYZ_Click);
-            // 
-            // jogOperatorToolStripMenuItem
-            // 
-            this.jogOperatorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.oPENToolStripMenuItem});
-            this.jogOperatorToolStripMenuItem.Name = "jogOperatorToolStripMenuItem";
-            this.jogOperatorToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
-            this.jogOperatorToolStripMenuItem.Text = "Jog Operator";
-            // 
-            // oPENToolStripMenuItem
-            // 
-            this.oPENToolStripMenuItem.Name = "oPENToolStripMenuItem";
-            this.oPENToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.oPENToolStripMenuItem.Text = "OPEN";
-            this.oPENToolStripMenuItem.Click += new System.EventHandler(this.oPENToolStripMenuItem_Click);
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(989, 335);
+            this.ClientSize = new System.Drawing.Size(826, 335);
             this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.btnSetXYZ);
             this.Controls.Add(this.groupBox12);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
@@ -509,7 +497,6 @@
         private System.Windows.Forms.ToolStripMenuItem oPENComToolStripMenu;
         private System.Windows.Forms.ToolStripMenuItem cLOSEComToolStripMenu;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenu;
-        private System.Windows.Forms.Button btnSetXYZ;
         private System.Windows.Forms.ToolStripMenuItem jogOperatorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem oPENToolStripMenuItem;
         public System.IO.Ports.SerialPort serialPort1;

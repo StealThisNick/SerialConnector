@@ -57,18 +57,6 @@ namespace SerialConnectorForms
 
                 serialPortPublic.Open();
                 progressBar1.Value = 100;
-                //serialPortPublic = serialPort1;
-
-
-                //serialPort1.PortName = cBoxCOMPORT.Text;
-                //serialPort1.BaudRate = Convert.ToInt32(cBoxBaudRate.Text);
-                //serialPort1.DataBits = Convert.ToInt32(cBoxDataBits.Text);
-                //serialPort1.StopBits = (StopBits)Enum.Parse(typeof(StopBits), cBoxStopBits.Text);
-                //serialPort1.Parity = (Parity)Enum.Parse(typeof(Parity), cBoxParity.Text);
-
-                //serialPort1.Open();
-                //progressBar1.Value = 100;
-                //serialPortPublic = serialPort1;
             }
 
             catch (Exception err)
@@ -96,7 +84,7 @@ namespace SerialConnectorForms
                 }
                 else if(sendWith == "Both")
                 {
-                    serialPortPublic.Write(dataOUT + "\r\n");
+                    serialPortPublic.WriteLine(dataOUT + "\r\n");
                 }
                 else if (sendWith == "New Line")
                 {
@@ -165,31 +153,6 @@ namespace SerialConnectorForms
             }
         }
 
-        //private void tBoxDataOut_KeyDown(object sender, KeyEventArgs e)
-        //{
-
-        //}
-
-        //private void EnterHandler()
-        //{
-        //    if (serialPort1.IsOpen)
-        //    {
-        //        dataOUT = tBoxDataOut.Text;
-        //        if (sendWith == "None")
-        //        {
-        //            serialPort1.Write(dataOUT);
-        //        }
-        //        else if (sendWith == "Both")
-        //        {
-        //            serialPort1.Write(dataOUT + "\r\n");
-        //        }
-        //        else if (sendWith == "New Line")
-        //        {
-        //            serialPort1.WriteLine(dataOUT + "\r");
-        //        }
-        //    }
-        //}
-
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             dataIN = serialPortPublic.ReadExisting();
@@ -220,14 +183,6 @@ namespace SerialConnectorForms
         {
             Application.Exit();
         }
-
-
-        private void btnSetXYZ_Click(object sender, EventArgs e)
-        {
-            setterXYZ newsetterXYZ = new setterXYZ();
-            newsetterXYZ.Show();
-        }
-
 
         private void oPENToolStripMenuItem_Click(object sender, EventArgs e)
         {
